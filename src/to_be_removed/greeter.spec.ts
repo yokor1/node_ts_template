@@ -2,7 +2,7 @@ import 'mocha';
 
 import {expect} from 'chai';
 
-import {greeter} from '../greeter';
+import {greeter} from './greeter';
 
 describe('greeting', () => {
   it('should return hello "name"', () => {
