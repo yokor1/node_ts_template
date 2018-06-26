@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha -r ts-node/register src/**/*.spec.ts",
+    "test": "nyc --reporter=html --reporter=text _mocha -r ts-node/register src/**/*.spec.ts",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "check": "gts check",
     "clean": "gts clean",
     "compile": "tsc -p .",
@@ -28,6 +29,7 @@
     "@types/mocha": "^5.2.3",
     "@types/morgan": "^1.7.35",
     "chai": "^4.1.2",
+    "coveralls": "^3.0.1",
     "gts": "^0.7.1",
     "mocha": "^5.2.0",
     "morgan": "latest",
